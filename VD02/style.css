@@ -1,3 +1,28 @@
-p {
-    background-color: crimson
+.card {
+    width: 400px;
+    height: 650px;
+    background-color: #00CED1;
+    border-radius: 60px;
+    overflow: hidden; /* Это предотвратит выход содержимого за границы карточки */
+    transition: transform 0.3s, box-shadow 0.3s; /* Для плавного эффекта при наведении */
+}
+
+.photo {
+    height: 20%;
+    padding: 10px;
+}
+
+.info {
+    padding: 40px;
+    height: 40%;
+}
+
+.photo img {
+    width: 100%; /* Установим ширину изображения на 100% ширины контейнера */
+    border-radius: 20px; /* Здесь исправлена ошибка в размере радиуса, "px" вместо "p" */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
