@@ -5,21 +5,22 @@
     border-radius: 60px;
     overflow: hidden; /* Это предотвратит выход содержимого за границы карточки */
     transition: transform 0.3s, box-shadow 0.3s; /* Для плавного эффекта при наведении */
+    margin: 20px; /* Добавляет отступы вокруг каждой карточки */
 }
 
 .photo {
-    height: 20%;
+    height: 40%;
     padding: 10px;
 }
 
 .info {
-    padding: 40px;
-    height: 40%;
+    height: 60%;
+    padding: 20px;
 }
 
 .photo img {
     width: 100%; /* Установим ширину изображения на 100% ширины контейнера */
-    border-radius: 20px; /* Здесь исправлена ошибка в размере радиуса, "px" вместо "p" */
+    border-radius: 20px;
 }
 
 .card:hover {
