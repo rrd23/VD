@@ -9,17 +9,17 @@
 }
 
 .photo {
-    height: 40%;
+    height: 50%;
     padding: 10px;
 }
 
 .info {
-    height: 60%;
-    padding: 20px;
+    height: 70%;
+    padding: 30px;
 }
 
 .photo img {
-    width: 100%; /* Установим ширину изображения на 100% ширины контейнера */
+    width: 70%; /* Установим ширину изображения на 70% ширины контейнера */
     border-radius: 20px;
 }
 
