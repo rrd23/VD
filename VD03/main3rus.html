@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <!-- Подключение CSS Bootstrap для стилизации страницы -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<!-- Компонент: Навигационная панель (Navbar) -->
+<!-- Взято из раздела: Компоненты > Navbar -->
+<!-- Содержит название сайта и навигационное меню -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Название сайта -->
+        <a class="navbar-brand" href="#">Мой Сайт</a>
+        <!-- Кнопка для раскрытия меню на мобильных устройствах -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Навигационное меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Пункты меню -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Основной контент -->
+<div class="container mt-5">
+    <!-- Секция 1: Слайдер -->
+    <!-- Компонент: Карусель (Carousel) -->
+    <!-- Взято из раздела: Компоненты > Carousel -->
+    <!-- Содержит слайдер с тремя изображениями -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- Индикаторы (точки навигации по слайдам) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+        </div>
+        <!-- Сами слайды -->
+        <div class="carousel-inner">
+            <!-- Первый слайд -->
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Слайд 1">
+            </div>
+            <!-- Второй слайд -->
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Слайд 2">
+            </div>
+            <!-- Третий слайд -->
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Слайд 3">
+            </div>
+        </div>
+        <!-- Управление слайдером (кнопки "назад" и "вперед") -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+    <!-- Секция 2: Карточки -->
+    <!-- Компонент: Карточка (Card) -->
+    <!-- Взято из раздела: Компоненты > Card -->
+    <!-- Содержит три карточки, которые располагаются в три колонки на больших экранах и в один столбец на маленьких экранах -->
+    <div class="row mt-5">
+        <!-- Первая карточка -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Карточка 1">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки 1</h5>
+                    <p class="card-text">Пример текста, который размещается на карточке для заполнения контента.</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Вторая карточка -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Карточка 2">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки 2</h5>
+                    <p class="card-text">Пример текста, который размещается на карточке для заполнения контента.</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Третья карточка -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Карточка 3">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки 3</h5>
+                    <p class="card-text">Пример текста, который размещается на карточке для заполнения контента.</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция 3: Аккордеон -->
+    <!-- Компонент: Аккордеон (Accordion) -->
+    <!-- Взято из раздела: Компоненты > Accordion -->
+    <!-- Содержит аккордеон с тремя элементами -->
+    <div class="accordion mt-5" id="accordionExample">
+        <!-- Первый элемент аккордеона -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Элемент аккордеона #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Это тело первого элемента аккордеона.</strong> Оно отображается по умолчанию, пока плагин collapse добавляет соответствующие классы для стилизации каждого элемента. Эти классы управляют внешним видом и показом/скрытием через CSS-переходы.
+                </div>
+            </div>
+        </div>
+        <!-- Второй элемент аккордеона -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Элемент аккордеона #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Это тело второго элемента аккордеона.</strong> Оно скрыто по умолчанию, пока плагин collapse добавляет соответствующие классы для стилизации каждого элемента.
+                </div>
+            </div>
+        </div>
+        <!-- Третий элемент аккордеона -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Элемент аккордеона #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Это тело третьего элемента аккордеона.</strong> Оно скрыто по умолчанию, пока плагин collapse добавляет соответствующие классы для стилизации каждого элемента.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Футер -->
+<!-- Компонент: Футер (Footer) -->
+<!-- Взято из раздела: Компоненты > Footer (в Bootstrap нет отдельного компонента для футера, это просто контейнер с текстом и ссылками) -->
+<!-- Содержит контактную информацию и ссылки на социальные сети -->
+<footer class="bg-dark text-white mt-5 p-4 text-center">
+    <p>Свяжитесь с нами: email@example.com | +1 234 567 890</p>
+    <p>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Twitter</a>
+        <a href="#" class="text-white">Instagram</a>
+    </p>
+</footer>
+
+<!-- Подключение JavaScript и зависимостей для работы компонентов Bootstrap -->
+<!-- Взято из раздела: Начало работы > Введение (подключение JavaScript для работы компонентов Bootstrap) -->
+<!-- Этот файл включает в себя всё необходимое для работы компонентов Bootstrap (например, аккордеона и карусели) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
