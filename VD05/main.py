@@ -1,27 +1,23 @@
-from lib2to3.fixes.fix_input import context
-
+# app.py
 from flask import Flask, render_template
 
+# Создаем экземпляр приложения Flask
 app = Flask(__name__)
 
-# Маршрут для главной страницы
+# Определяем маршрут для главной страницы
 @app.route('/')
-def index():
-    context = {
-        "caption" : "Car",
-        "user" : "Iurii"
-    }
-    return render_template('shablon.html', **context)
+def home():
+    # Рендеринг шаблона home.html
+    return render_template('home.html')
 
-# Маршрут для страницы блога
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
+# Определяем маршрут для страницы "О нас"
+@app.route('/about')
+def about():
+    # Рендеринг шаблона about.html
+    return render_template('about.html')
 
-# Маршрут для страницы контактов
-@app.route('/contacts')
-def contacts():
-    return render_template('contacts.html')
-
+# Запуск приложения
 if __name__ == '__main__':
+    # Указываем хост и порт для запуска приложения
     app.run(debug=True)
+
