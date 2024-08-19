@@ -6,7 +6,7 @@ posts = []
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-#использует метод POST, так как информация будет отправляться. Request method сравнивает данные с HTTP-запросом.
+#Использует метод POST, так как информация будет отправляться. Request method сравнивает данные с HTTP-запросом.
     if request.method == 'POST':
         #функция request.form извлекает значение из соответствующих полей
         title = request.form.get('title')
